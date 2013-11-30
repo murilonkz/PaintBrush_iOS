@@ -43,12 +43,12 @@
     return border;
 }
 
--(void)setBackgroundwithRed:(CGFloat)red withBlue:(CGFloat)blue andBlack:(CGFloat)black{
-    background = [UIColor colorWithRed:red green:blue blue:black alpha:1];
+-(void)setBackgroundwithRed:(CGFloat)red withGreen:(CGFloat)green andBlue:(CGFloat)blue{
+    background = [UIColor colorWithRed:red green:green blue:blue alpha:1];
 }
 
--(void)setBorderwithRed:(CGFloat)red withBlue:(CGFloat)blue andBlack:(CGFloat)black{
-    border = [UIColor colorWithRed:red green:blue blue:black alpha:1];
+-(void)setBorderwithRed:(CGFloat)red withGreen:(CGFloat)green andBlue:(CGFloat)blue{
+    border = [UIColor colorWithRed:red green:green blue:blue alpha:1];
 }
 
 @end

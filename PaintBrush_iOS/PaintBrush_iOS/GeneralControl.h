@@ -9,9 +9,9 @@
 #import <Foundation/Foundation.h>
 
 @interface GeneralControl : NSObject
-
++(GeneralControl *)sharedControl;
 -(UIColor *)getBackground;
 -(UIColor *)getBorder;
--(void)setBackgroundwithRed:(CGFloat)red withBlue:(CGFloat)blue andBlack:(CGFloat)black;
--(void)setBorderwithRed:(CGFloat)red withBlue:(CGFloat)blue andBlack:(CGFloat)black;
+-(void)setBackgroundwithRed:(CGFloat)red withGreen:(CGFloat)green andBlue:(CGFloat)blue;
+-(void)setBorderwithRed:(CGFloat)red withGreen:(CGFloat)green andBlue:(CGFloat)blue;
 @end

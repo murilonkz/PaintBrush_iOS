@@ -7,11 +7,13 @@
 //
 
 #import "IndexViewController.h"
+#import "GeneralControl.h"
 @interface IndexViewController ()
 
 @end
 
 @implementation IndexViewController
+@synthesize lblBlueBackground,lblBlueBorder,lblGreenBackground,lblGreenBorder,lblRedBackground,lblRedBorder;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -35,6 +37,7 @@
 }
 
 - (IBAction)getCircle:(id)sender {
+
 }
 
 - (IBAction)getPentagono:(id)sender {
@@ -44,20 +47,45 @@
 }
 
 - (IBAction)getText:(id)sender {
+
 }
 - (IBAction)RedBackground:(id)sender {
+    CGFloat red = lblRedBackground.value;
+    CGFloat blue =  lblBlueBackground.value;
+    CGFloat green =  lblGreenBackground.value;
+    [[GeneralControl sharedControl]setBackgroundwithRed:red withGreen:green andBlue:blue];
 }
 
 - (IBAction)GreenBackground:(id)sender {
+    CGFloat red = lblRedBackground.value;
+    CGFloat blue =  lblBlueBackground.value;
+    CGFloat green =  lblGreenBackground.value;
+    [[GeneralControl sharedControl]setBackgroundwithRed:red withGreen:green andBlue:blue];
 }
 
 - (IBAction)BlueBackground:(id)sender {
+    CGFloat red = lblRedBackground.value;
+    CGFloat blue =  lblBlueBackground.value;
+    CGFloat green =  lblGreenBackground.value;
+    [[GeneralControl sharedControl]setBackgroundwithRed:red withGreen:green andBlue:blue];
 }
 - (IBAction)RedBorder:(id)sender {
+    CGFloat red = lblRedBorder.value;
+    CGFloat blue =  lblBlueBorder.value;
+    CGFloat green =  lblGreenBorder.value;
+    [[GeneralControl sharedControl]setBorderwithRed:red withGreen:green andBlue:blue];
 }
 - (IBAction)BlueBorder:(id)sender {
+    CGFloat red = lblRedBorder.value;
+    CGFloat blue =  lblBlueBorder.value;
+    CGFloat green =  lblGreenBorder.value;
+    [[GeneralControl sharedControl]setBorderwithRed:red withGreen:green andBlue:blue];
 }
 
 - (IBAction)GreenBorder:(id)sender {
+    CGFloat red = lblRedBorder.value;
+    CGFloat blue =  lblBlueBorder.value;
+    CGFloat green =  lblGreenBorder.value;
+    [[GeneralControl sharedControl]setBorderwithRed:red withGreen:green andBlue:blue];
 }
 @end
