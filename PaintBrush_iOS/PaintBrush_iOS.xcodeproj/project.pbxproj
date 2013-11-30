@@ -27,6 +27,10 @@
 		EB7EBCAD184A48F100D005A8 /* polygon.png in Resources */ = {isa = PBXBuildFile; fileRef = EB7EBCA9184A48F100D005A8 /* polygon.png */; };
 		EB7EBCAE184A48F100D005A8 /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = EB7EBCAA184A48F100D005A8 /* circle.png */; };
 		EB7EBCB0184A4DA300D005A8 /* trash.png in Resources */ = {isa = PBXBuildFile; fileRef = EB7EBCAF184A4DA300D005A8 /* trash.png */; };
+		EBAB97FF184A6360001FF7FE /* RectView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAB97F8184A6360001FF7FE /* RectView.m */; };
+		EBAB9800184A6360001FF7FE /* OvalView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAB97FA184A6360001FF7FE /* OvalView.m */; };
+		EBAB9801184A6360001FF7FE /* TextView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAB97FC184A6360001FF7FE /* TextView.m */; };
+		EBAB9802184A6360001FF7FE /* PolygonView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAB97FE184A6360001FF7FE /* PolygonView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +70,14 @@
 		EB7EBCA9184A48F100D005A8 /* polygon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = polygon.png; sourceTree = "<group>"; };
 		EB7EBCAA184A48F100D005A8 /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle.png; sourceTree = "<group>"; };
 		EB7EBCAF184A4DA300D005A8 /* trash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trash.png; sourceTree = "<group>"; };
+		EBAB97F7184A6360001FF7FE /* RectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RectView.h; sourceTree = "<group>"; };
+		EBAB97F8184A6360001FF7FE /* RectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RectView.m; sourceTree = "<group>"; };
+		EBAB97F9184A6360001FF7FE /* OvalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OvalView.h; sourceTree = "<group>"; };
+		EBAB97FA184A6360001FF7FE /* OvalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OvalView.m; sourceTree = "<group>"; };
+		EBAB97FB184A6360001FF7FE /* TextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextView.h; sourceTree = "<group>"; };
+		EBAB97FC184A6360001FF7FE /* TextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextView.m; sourceTree = "<group>"; };
+		EBAB97FD184A6360001FF7FE /* PolygonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolygonView.h; sourceTree = "<group>"; };
+		EBAB97FE184A6360001FF7FE /* PolygonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PolygonView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +190,14 @@
 		EB7EBC9F184A47B700D005A8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EBAB97F7184A6360001FF7FE /* RectView.h */,
+				EBAB97F8184A6360001FF7FE /* RectView.m */,
+				EBAB97F9184A6360001FF7FE /* OvalView.h */,
+				EBAB97FA184A6360001FF7FE /* OvalView.m */,
+				EBAB97FB184A6360001FF7FE /* TextView.h */,
+				EBAB97FC184A6360001FF7FE /* TextView.m */,
+				EBAB97FD184A6360001FF7FE /* PolygonView.h */,
+				EBAB97FE184A6360001FF7FE /* PolygonView.m */,
 				EB7EBCA3184A48D400D005A8 /* IndexViewController.xib */,
 			);
 			name = View;
@@ -305,9 +325,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBAB9801184A6360001FF7FE /* TextView.m in Sources */,
 				EB7EBC80184A474600D005A8 /* AppDelegate.m in Sources */,
 				EB7EBC7C184A474600D005A8 /* main.m in Sources */,
+				EBAB9802184A6360001FF7FE /* PolygonView.m in Sources */,
+				EBAB9800184A6360001FF7FE /* OvalView.m in Sources */,
 				DB224686184A5734008CF34B /* GeneralControl.m in Sources */,
+				EBAB97FF184A6360001FF7FE /* RectView.m in Sources */,
 				EB7EBCA4184A48D400D005A8 /* IndexViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -40,21 +40,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)getCircle:(id)sender {
-    NSLog(@"CHEGOU AQUI");
-    CGRect frame = [telaDesenho bounds];
-    OvalView *circle = [[OvalView alloc]initWithFrame:frame];
-    [telaDesenho addSubview:circle];
-}
-
-- (IBAction)getPentagono:(id)sender {
-}
-
-- (IBAction)getRectangle:(id)sender {
-}
-
-- (IBAction)getText:(id)sender {
-}
 - (IBAction)RedBackground:(id)sender {
 }
 
@@ -69,5 +54,26 @@
 }
 
 - (IBAction)GreenBorder:(id)sender {
+}
+- (IBAction)getCircle2:(id)sender {
+    CGRect frame = [telaDesenho bounds];
+    OvalView *circle = [[OvalView alloc]initWithFrame:frame];
+    [telaDesenho addSubview:circle];
+
+
+}
+
+- (IBAction)getPentagono:(id)sender {
+    CGRect frame = [telaDesenho bounds];
+    PolygonView *pentagono = [[PolygonView alloc]initWithFrame:frame];
+    [telaDesenho addSubview:pentagono];
+}
+
+- (IBAction)getRectangle:(id)sender {
+    NSLog(@"TESTE");
+}
+
+- (IBAction)getText:(id)sender {
+    NSLog(@"TESTE");
 }
 @end
