@@ -19,6 +19,13 @@
 		EB7EBC8B184A474600D005A8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB7EBC73184A474600D005A8 /* UIKit.framework */; };
 		EB7EBC93184A474600D005A8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EB7EBC91184A474600D005A8 /* InfoPlist.strings */; };
 		EB7EBC95184A474600D005A8 /* PaintBrush_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7EBC94184A474600D005A8 /* PaintBrush_iOSTests.m */; };
+		EB7EBCA4184A48D400D005A8 /* IndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7EBCA2184A48D400D005A8 /* IndexViewController.m */; };
+		EB7EBCA5184A48D400D005A8 /* IndexViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB7EBCA3184A48D400D005A8 /* IndexViewController.xib */; };
+		EB7EBCAB184A48F100D005A8 /* rectangle.png in Resources */ = {isa = PBXBuildFile; fileRef = EB7EBCA7184A48F100D005A8 /* rectangle.png */; };
+		EB7EBCAC184A48F100D005A8 /* text.png in Resources */ = {isa = PBXBuildFile; fileRef = EB7EBCA8184A48F100D005A8 /* text.png */; };
+		EB7EBCAD184A48F100D005A8 /* polygon.png in Resources */ = {isa = PBXBuildFile; fileRef = EB7EBCA9184A48F100D005A8 /* polygon.png */; };
+		EB7EBCAE184A48F100D005A8 /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = EB7EBCAA184A48F100D005A8 /* circle.png */; };
+		EB7EBCB0184A4DA300D005A8 /* trash.png in Resources */ = {isa = PBXBuildFile; fileRef = EB7EBCAF184A4DA300D005A8 /* trash.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +55,14 @@
 		EB7EBC90184A474600D005A8 /* PaintBrush_iOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PaintBrush_iOSTests-Info.plist"; sourceTree = "<group>"; };
 		EB7EBC92184A474600D005A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EB7EBC94184A474600D005A8 /* PaintBrush_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaintBrush_iOSTests.m; sourceTree = "<group>"; };
+		EB7EBCA1184A48D400D005A8 /* IndexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexViewController.h; sourceTree = "<group>"; };
+		EB7EBCA2184A48D400D005A8 /* IndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndexViewController.m; sourceTree = "<group>"; };
+		EB7EBCA3184A48D400D005A8 /* IndexViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IndexViewController.xib; sourceTree = "<group>"; };
+		EB7EBCA7184A48F100D005A8 /* rectangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rectangle.png; sourceTree = "<group>"; };
+		EB7EBCA8184A48F100D005A8 /* text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = text.png; sourceTree = "<group>"; };
+		EB7EBCA9184A48F100D005A8 /* polygon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = polygon.png; sourceTree = "<group>"; };
+		EB7EBCAA184A48F100D005A8 /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle.png; sourceTree = "<group>"; };
+		EB7EBCAF184A4DA300D005A8 /* trash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trash.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +122,7 @@
 		EB7EBC75184A474600D005A8 /* PaintBrush_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				EB7EBCA6184A48E600D005A8 /* Images */,
 				EB7EBCA0184A47BB00D005A8 /* Controller */,
 				EB7EBC9F184A47B700D005A8 /* View */,
 				EB7EBC9E184A47B400D005A8 /* Model */,
@@ -157,6 +173,7 @@
 		EB7EBC9F184A47B700D005A8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EB7EBCA3184A48D400D005A8 /* IndexViewController.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -164,8 +181,22 @@
 		EB7EBCA0184A47BB00D005A8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				EB7EBCA1184A48D400D005A8 /* IndexViewController.h */,
+				EB7EBCA2184A48D400D005A8 /* IndexViewController.m */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		EB7EBCA6184A48E600D005A8 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				EB7EBCAF184A4DA300D005A8 /* trash.png */,
+				EB7EBCA7184A48F100D005A8 /* rectangle.png */,
+				EB7EBCA8184A48F100D005A8 /* text.png */,
+				EB7EBCA9184A48F100D005A8 /* polygon.png */,
+				EB7EBCAA184A48F100D005A8 /* circle.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +274,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB7EBCA5184A48D400D005A8 /* IndexViewController.xib in Resources */,
+				EB7EBCAC184A48F100D005A8 /* text.png in Resources */,
+				EB7EBCAD184A48F100D005A8 /* polygon.png in Resources */,
+				EB7EBCB0184A4DA300D005A8 /* trash.png in Resources */,
+				EB7EBCAB184A48F100D005A8 /* rectangle.png in Resources */,
+				EB7EBCAE184A48F100D005A8 /* circle.png in Resources */,
 				EB7EBC7A184A474600D005A8 /* InfoPlist.strings in Resources */,
 				EB7EBC82184A474600D005A8 /* Images.xcassets in Resources */,
 			);
@@ -265,6 +302,7 @@
 			files = (
 				EB7EBC80184A474600D005A8 /* AppDelegate.m in Sources */,
 				EB7EBC7C184A474600D005A8 /* main.m in Sources */,
+				EB7EBCA4184A48D400D005A8 /* IndexViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
