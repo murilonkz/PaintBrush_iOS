@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IndexViewController">
             <connections>
+                <outlet property="telaDesenho" destination="Ao3-nh-5x4" id="0V4-Im-Zt9"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>
@@ -27,7 +28,7 @@
                                 </state>
                             </button>
                             <connections>
-                                <action selector="getCircle:" destination="-1" id="zbv-Mc-JxA"/>
+                                <action selector="getCircle:" destination="-1" id="y2Z-li-gUv"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem style="plain" id="X6g-78-IBf">
@@ -68,10 +69,11 @@
                         </barButtonItem>
                     </items>
                 </toolbar>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="trash.png" translatesAutoresizingMaskIntoConstraints="NO" id="zpR-D6-q9g">
-                    <rect key="frame" x="258" y="75" width="42" height="42"/>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ao3-nh-5x4">
+                    <rect key="frame" x="0.0" y="128" width="320" height="303"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                </imageView>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
@@ -83,6 +85,5 @@
         <image name="polygon.png" width="32" height="32"/>
         <image name="rectangle.png" width="32" height="32"/>
         <image name="text.png" width="32" height="32"/>
-        <image name="trash.png" width="48" height="48"/>
     </resources>
 </document>

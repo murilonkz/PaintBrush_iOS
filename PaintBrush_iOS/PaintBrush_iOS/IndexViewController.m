@@ -7,12 +7,18 @@
 //
 
 #import "IndexViewController.h"
+#import "GeneralControl.h"
+#import "OvalView.h"
+#import "RectView.h"
+#import "TextView.h"
+#import "PolygonView.h"
+
 @interface IndexViewController ()
 
 @end
 
 @implementation IndexViewController
-
+@synthesize telaDesenho;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -35,6 +41,10 @@
 }
 
 - (IBAction)getCircle:(id)sender {
+    NSLog(@"CHEGOU AQUI");
+    CGRect frame = [telaDesenho bounds];
+    OvalView *circle = [[OvalView alloc]initWithFrame:frame];
+    [telaDesenho addSubview:circle];
 }
 
 - (IBAction)getPentagono:(id)sender {
