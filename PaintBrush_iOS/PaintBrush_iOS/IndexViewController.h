@@ -13,5 +13,6 @@
 - (IBAction)getPentagono:(id)sender;
 - (IBAction)getRectangle:(id)sender;
 - (IBAction)getText:(id)sender;
+@property (weak, nonatomic) IBOutlet UIView *tela;
 
 @end

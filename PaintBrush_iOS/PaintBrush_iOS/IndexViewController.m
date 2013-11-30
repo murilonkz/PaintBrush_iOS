@@ -7,7 +7,6 @@
 //
 
 #import "IndexViewController.h"
-
 @interface IndexViewController ()
 
 @end
