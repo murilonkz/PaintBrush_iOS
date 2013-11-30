@@ -55,4 +55,19 @@
 
 - (IBAction)getText:(id)sender {
 }
+- (IBAction)RedBackground:(id)sender {
+}
+
+- (IBAction)GreenBackground:(id)sender {
+}
+
+- (IBAction)BlueBackground:(id)sender {
+}
+- (IBAction)RedBorder:(id)sender {
+}
+- (IBAction)BlueBorder:(id)sender {
+}
+
+- (IBAction)GreenBorder:(id)sender {
+}
 @end
