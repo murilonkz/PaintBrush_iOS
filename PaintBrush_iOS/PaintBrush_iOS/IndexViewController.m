@@ -88,4 +88,25 @@
     CGFloat green =  lblGreenBorder.value;
     [[GeneralControl sharedControl]setBorderwithRed:red withGreen:green andBlue:blue];
 }
+- (IBAction)getCircle2:(id)sender {
+    CGRect frame = [telaDesenho bounds];
+    OvalView *circle = [[OvalView alloc]initWithFrame:frame];
+    [telaDesenho addSubview:circle];
+
+
+}
+
+- (IBAction)getPentagono:(id)sender {
+    CGRect frame = [telaDesenho bounds];
+    PolygonView *pentagono = [[PolygonView alloc]initWithFrame:frame];
+    [telaDesenho addSubview:pentagono];
+}
+
+- (IBAction)getRectangle:(id)sender {
+    NSLog(@"TESTE");
+}
+
+- (IBAction)getText:(id)sender {
+    NSLog(@"TESTE");
+}
 @end

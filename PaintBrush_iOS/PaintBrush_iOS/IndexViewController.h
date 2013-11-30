@@ -9,11 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface IndexViewController : UIViewController
-- (IBAction)getCircle:(id)sender;
-- (IBAction)getPentagono:(id)sender;
-- (IBAction)getRectangle:(id)sender;
-- (IBAction)getText:(id)sender;
-@property (weak, nonatomic) IBOutlet UIView *tela;
 - (IBAction)RedBackground:(id)sender;
 - (IBAction)GreenBackground:(id)sender;
 - (IBAction)BlueBackground:(id)sender;
@@ -26,5 +21,15 @@
 @property (weak, nonatomic) IBOutlet UISlider *lblRedBorder;
 @property (weak, nonatomic) IBOutlet UISlider *lblGreenBorder;
 @property (weak, nonatomic) IBOutlet UISlider *lblBlueBorder;
+@property (weak, nonatomic) IBOutlet UIView *telaDesenho;
+- (IBAction)getCircle2:(id)sender;
+- (IBAction)getPentagono:(id)sender;
+- (IBAction)getRectangle:(id)sender;
+- (IBAction)getText:(id)sender;
+@property (weak, nonatomic) IBOutlet UIView *backgroundViewColor;
+@property (weak, nonatomic) IBOutlet UIView *borderViewColor;
+
+
+
 
 @end
