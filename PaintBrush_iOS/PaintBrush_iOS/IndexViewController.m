@@ -8,18 +8,24 @@
 
 #import "IndexViewController.h"
 #import "GeneralControl.h"
+#import "OvalView.h"
+#import "RectView.h"
+#import "TextView.h"
+#import "PolygonView.h"
+
 @interface IndexViewController ()
 
 @end
 
 @implementation IndexViewController
+@synthesize telaDesenho,backgroundViewColor,borderViewColor;
 @synthesize lblBlueBackground,lblBlueBorder,lblGreenBackground,lblGreenBorder,lblRedBackground,lblRedBorder;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+
     }
     return self;
 }
@@ -36,24 +42,13 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)getCircle:(id)sender {
-
-}
-
-- (IBAction)getPentagono:(id)sender {
-}
-
-- (IBAction)getRectangle:(id)sender {
-}
-
-- (IBAction)getText:(id)sender {
-
-}
 - (IBAction)RedBackground:(id)sender {
     CGFloat red = lblRedBackground.value;
     CGFloat blue =  lblBlueBackground.value;
     CGFloat green =  lblGreenBackground.value;
     [[GeneralControl sharedControl]setBackgroundwithRed:red withGreen:green andBlue:blue];
+    UIColor *back = [[GeneralControl sharedControl]getBackground];
+    [backgroundViewColor setBackgroundColor:back];
 }
 
 - (IBAction)GreenBackground:(id)sender {
@@ -61,6 +56,8 @@
     CGFloat blue =  lblBlueBackground.value;
     CGFloat green =  lblGreenBackground.value;
     [[GeneralControl sharedControl]setBackgroundwithRed:red withGreen:green andBlue:blue];
+    UIColor *back = [[GeneralControl sharedControl]getBackground];
+    [backgroundViewColor setBackgroundColor:back];
 }
 
 - (IBAction)BlueBackground:(id)sender {
@@ -68,18 +65,24 @@
     CGFloat blue =  lblBlueBackground.value;
     CGFloat green =  lblGreenBackground.value;
     [[GeneralControl sharedControl]setBackgroundwithRed:red withGreen:green andBlue:blue];
+    UIColor *back = [[GeneralControl sharedControl]getBackground];
+    [backgroundViewColor setBackgroundColor:back];
 }
 - (IBAction)RedBorder:(id)sender {
     CGFloat red = lblRedBorder.value;
     CGFloat blue =  lblBlueBorder.value;
     CGFloat green =  lblGreenBorder.value;
     [[GeneralControl sharedControl]setBorderwithRed:red withGreen:green andBlue:blue];
+    UIColor *back = [[GeneralControl sharedControl]getBorder];
+    [borderViewColor setBackgroundColor:back];
 }
 - (IBAction)BlueBorder:(id)sender {
     CGFloat red = lblRedBorder.value;
     CGFloat blue =  lblBlueBorder.value;
     CGFloat green =  lblGreenBorder.value;
     [[GeneralControl sharedControl]setBorderwithRed:red withGreen:green andBlue:blue];
+    UIColor *back = [[GeneralControl sharedControl]getBorder];
+    [borderViewColor setBackgroundColor:back];
 }
 
 - (IBAction)GreenBorder:(id)sender {
@@ -87,8 +90,10 @@
     CGFloat blue =  lblBlueBorder.value;
     CGFloat green =  lblGreenBorder.value;
     [[GeneralControl sharedControl]setBorderwithRed:red withGreen:green andBlue:blue];
+    UIColor *back = [[GeneralControl sharedControl]getBorder];
+    [borderViewColor setBackgroundColor:back];
 }
-- (IBAction)getCircle2:(id)sender {
+- (IBAction)getCircle:(id)sender {
     CGRect frame = [telaDesenho bounds];
     OvalView *circle = [[OvalView alloc]initWithFrame:frame];
     [telaDesenho addSubview:circle];
