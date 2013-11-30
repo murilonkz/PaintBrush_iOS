@@ -107,6 +107,9 @@
 		EB7EBC75184A474600D005A8 /* PaintBrush_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				EB7EBCA0184A47BB00D005A8 /* Controller */,
+				EB7EBC9F184A47B700D005A8 /* View */,
+				EB7EBC9E184A47B400D005A8 /* Model */,
 				EB7EBC7E184A474600D005A8 /* AppDelegate.h */,
 				EB7EBC7F184A474600D005A8 /* AppDelegate.m */,
 				EB7EBC81184A474600D005A8 /* Images.xcassets */,
@@ -142,6 +145,27 @@
 				EB7EBC91184A474600D005A8 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB7EBC9E184A47B400D005A8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		EB7EBC9F184A47B700D005A8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		EB7EBCA0184A47BB00D005A8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
