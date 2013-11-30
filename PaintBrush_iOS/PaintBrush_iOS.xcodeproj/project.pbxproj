@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB224686184A5734008CF34B /* GeneralControl.m in Sources */ = {isa = PBXBuildFile; fileRef = DB224685184A5734008CF34B /* GeneralControl.m */; };
 		EB7EBC70184A474600D005A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB7EBC6F184A474600D005A8 /* Foundation.framework */; };
 		EB7EBC72184A474600D005A8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB7EBC71184A474600D005A8 /* CoreGraphics.framework */; };
 		EB7EBC74184A474600D005A8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB7EBC73184A474600D005A8 /* UIKit.framework */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB224684184A5734008CF34B /* GeneralControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralControl.h; sourceTree = "<group>"; };
+		DB224685184A5734008CF34B /* GeneralControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneralControl.m; sourceTree = "<group>"; };
 		EB7EBC6C184A474600D005A8 /* PaintBrush_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaintBrush_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB7EBC6F184A474600D005A8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EB7EBC71184A474600D005A8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -166,6 +169,8 @@
 		EB7EBC9E184A47B400D005A8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DB224684184A5734008CF34B /* GeneralControl.h */,
+				DB224685184A5734008CF34B /* GeneralControl.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -302,6 +307,7 @@
 			files = (
 				EB7EBC80184A474600D005A8 /* AppDelegate.m in Sources */,
 				EB7EBC7C184A474600D005A8 /* main.m in Sources */,
+				DB224686184A5734008CF34B /* GeneralControl.m in Sources */,
 				EB7EBCA4184A48D400D005A8 /* IndexViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -503,6 +509,7 @@
 				EB7EBC9A184A474600D005A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB7EBC9B184A474600D005A8 /* Build configuration list for PBXNativeTarget "PaintBrush_iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +518,7 @@
 				EB7EBC9D184A474600D005A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
